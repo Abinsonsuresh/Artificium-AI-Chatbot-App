@@ -16,9 +16,9 @@ const Header = () => {
 
                     </div>
                     <div className='flex items-center justify-center gap-5'>
-                        <div className='flex items-center gap-3'>
+                        <div className='flex items-center gap-3 cursor-pointer'>
                             <IoShareSocialOutline color='gray' />
-                            <span className='text-gray-500'>Share</span>
+                            <button className='text-gray-500'>Share</button>
                         </div>
                         <div className='bg-gray-800 p-2 rounded-lg'>
                             <CiEdit />
