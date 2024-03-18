@@ -7,7 +7,10 @@ import { RiBillLine } from "react-icons/ri";
 const SideBar = () => {
     return (
         <>
-            <div className='w-[312px]  h-full min-h-[670px] gap-1 hidden md:flex flex-col justify-between  '>
+            <div className="">
+
+
+            <div className='w-[312px]  h-full  gap-1 hidden md:flex flex-col justify-between  overflow-y-scroll  overflow-x-hidden scroll  scroll-smooth'>
                 <div className='flex flex-col gap-1'>
                     {/* GROUP SECTION */}
                     <div className='GROUP flex flex-row justify-between items-center p-[24px] rounded-t-xl bg-[#131619] '>
@@ -110,9 +113,9 @@ const SideBar = () => {
                 </div>
 
 
-{/* PROFILE */}
-<div>
-<div className='GROUP flex flex-row justify-between items-center p-[24px] rounded-t-xl bg-[#131619] '>
+                {/* PROFILE */}
+                <div>
+                    <div className='GROUP flex flex-row justify-between items-center p-[24px] rounded-t-xl bg-[#131619] '>
                         <div className='flex flex-row justify-center items-center gap-5'>
                             <div>
                                 <div className='w-10 h-10 rounded-full bg-red-950'></div>
@@ -126,10 +129,10 @@ const SideBar = () => {
                             <FaAngleDown className='' color='gray' />
                         </div>
                     </div>
-</div>
+                </div>
 
             </div>
-
+            </div>
         </>
     )
 }
