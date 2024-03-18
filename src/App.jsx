@@ -8,7 +8,7 @@ function App() {
   const [share, setShare] = useState(true)
   return (
     <>
-      <div className="flex p-4 gap-5 max-h-screen relative">
+      <div className="flex p-4 gap-5 max-h-screen  relative">
         <SideBar setShare={setShare} />
         <div className="flex flex-col">
           <Header />
@@ -17,7 +17,7 @@ function App() {
 
         {
           share && (
-            <div className="absolute top-[10%] ">
+            <div className="absolute centered-axis-x">
               <Share />
             </div>
           )
