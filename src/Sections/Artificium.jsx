@@ -5,14 +5,14 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 const Artificium = () => {
     return (
         <>
-            <div className="flex justify-center items-center h-[600px]  mt-2 overflow-y-scroll border  overflow-x-hidden scroll  scroll-smooth">
-                <div className='text-center flex flex-col items-center'>
+            <div className="flex w-full  justify-center items-center h-full  mt-2 p-2 overflow-y-scroll border scroll  scroll-smooth">
+                <div className='text-center flex flex-col items-center h-full'>
                     <div>
                         <h3 className='font-bold text-xl'>Innovation Starter Pack</h3>
                         <p className='text-sm text-gray-500'>Kickstart your innovation process with our comprehensive selection of predefined prompts.</p>
                     </div>
                     {/* CONTENT */}
-                    <div className="flex flex-col md:flex-row items-center gap-5 mt-2">
+                    <div className="flex flex-wrap justify-center items-center gap-5 mt-2">
                         <div className='flex flex-col items-center'>
                             <div className='flex items-center flex-col my-4'>
                                 <div className='bg-gray-900 shadow-2xl shadow-green-500 p-4 rounded-full'>
@@ -108,10 +108,12 @@ const Artificium = () => {
 
                     <div className='flex flex-col items-center mt-8'>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus cumque, molestiae amet sequi totam in quaerat molestias repellat consectetur dolorem eius rerum, enim dolore accusamus. Accusamus autem doloremque nulla.</p>
+
+
                     </div>
                 </div>
             </div>
-            <div className='bg-gray-950 w-full h-[100px]'>
+            <div className='bg-gray-950 w-[full] border h-[100px]'>
 
             </div>
         </>

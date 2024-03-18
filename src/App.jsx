@@ -6,9 +6,9 @@ function App() {
 
   return (
     <>
-      <div className="flex p-4 gap-5 max-h-screen overflow-hidden">
+      <div className="flex p-4 gap-5 max-h-screen ">
         <SideBar />
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col">
           <Header />
           <Artificium />
         </div>
