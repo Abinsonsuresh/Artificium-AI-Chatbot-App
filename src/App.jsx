@@ -6,7 +6,10 @@ function App() {
   return (
     <>
       <div className="flex p-4 gap-5 max-h-screen overflow-hidden">
-        <SideBar />
+        <div className="overflow-y-scroll overflow-x-hidden scroll  scroll-smooth">
+        <SideBar/>
+
+        </div>
         <Header />
       </div>
 
