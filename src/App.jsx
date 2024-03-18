@@ -1,10 +1,15 @@
+import Header from "./Components/Header"
+import SideBar from "./Components/SideBar"
+
 function App() {
 
   return (
     <>
-        <h1 className="text-3xl font-bold text-red-500 underline">
-      Hello world!
-    </h1>
+      <div className="flex p-4 gap-5 max-h-screen overflow-hidden">
+        <SideBar />
+        <Header />
+      </div>
+
     </>
   )
 }
