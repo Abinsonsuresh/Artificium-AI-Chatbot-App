@@ -5,7 +5,7 @@ import Artificium from "./Sections/Artificium"
 import Share from "./Components/Share"
 
 function App() {
-  const [share, setShare] = useState(false)
+  const [share, setShare] = useState(true)
   return (
     <>
       <div className="flex p-4 gap-5 max-h-screen relative">
