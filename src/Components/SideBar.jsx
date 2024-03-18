@@ -13,7 +13,7 @@ const SideBar = () => {
             <div className="">
 
 
-            <div className='w-[312px]  h-full  gap-1 hidden md:flex flex-col justify-between  overflow-y-scroll  overflow-x-hidden scroll  scroll-smooth'>
+            <div className='w-[312px] bg-[#0f1112] p-2 rounded-xl  h-full  gap-1 hidden md:flex flex-col justify-between  overflow-y-scroll  overflow-x-hidden scroll  scroll-smooth'>
                 <div className='flex flex-col gap-1'>
                     {/* GROUP SECTION */}
                     <div className='GROUP flex flex-row justify-between items-center p-[24px] rounded-t-xl bg-[#0D0F10] '>
@@ -117,15 +117,15 @@ const SideBar = () => {
 
 
                 {/* PROFILE */}
-                <div>
-                    <div className='GROUP flex flex-row justify-between items-center p-[24px] rounded-xl bg-gradient-to-r from-gray-900 via-black to-[#0D0F10] '>
+                <div className=''>
+                    <div className='GROUP  flex flex-row justify-between items-center p-[24px] rounded-xl bg-gradient-to-r from-gray-900 via-black to-[#0D0F10] '>
                         <div className='flex flex-row justify-center items-center gap-5'>
                             <div>
                                 <div className='w-10 h-10 rounded-2xl bg-red-950'></div>
                             </div>
                             <div className='flex flex-col'>
                                 <p className='text-[16px]'>Ryan Lee</p>
-                                <p className='text-[12px]'>Premium</p>
+                                <p className='text-[12px]'></p>
                             </div>
                         </div>
                         <div>
