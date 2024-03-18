@@ -1,13 +1,53 @@
 import React from 'react'
-
+import { FiSettings } from "react-icons/fi";
+import { IoShareSocialOutline } from "react-icons/io5";
+import { CiEdit } from "react-icons/ci";
+import { BsTriangle } from 'react-icons/bs';
+import { PiChatCircleLight } from "react-icons/pi";
+import { CiFolderOn } from "react-icons/ci";
 const Header = () => {
-  return (
-    <>
-     <div className='bg-[#0D0F10] h-[150px] w-full min-w-screen p-4 rounded-xl'>
-                dfdf
+    return (
+        <>
+            <div className='w-full flex flex-col  gap-[1px]  rounded-xl'>
+                <div className='bg-[#0D0F10] flex justify-between items-center p-[24px] rounded-t-xl'>
+                    <div>
+                        <p className='font-bold'>Orbital Oddysey</p>
+                        <p className='text-sm text-gray-500'>Marketing Campaign for a new TV series Launch</p>
+
+                    </div>
+                    <div className='flex items-center justify-center gap-5'>
+                        <div className='flex items-center gap-3'>
+                            <IoShareSocialOutline color='gray' />
+                            <span className='text-gray-500'>Share</span>
+                        </div>
+                        <div className='bg-gray-800 p-2 rounded-lg'>
+                            <CiEdit />
+                        </div>
+                    </div>
+                </div>
+
+
+                <div className='bg-[#0D0F10] flex justify-start items-center p-[24px] rounded-b-xl gap-5'>
+                    <div className='flex items-center gap-3'>
+                    <BsTriangle color='green' />
+                        <span>Artificium</span>
+                    </div>
+
+                    <div className='flex items-center gap-3'>
+                    <PiChatCircleLight />
+                        <span>Chat</span>
+                    </div>
+
+                    <div className='flex items-center gap-3'>
+                    <CiFolderOn />
+                        <span>Library</span>
+                    </div>
+
+                </div>
+
             </div>
-    </>
-  )
+        </>
+    )
 }
 
 export default Header
