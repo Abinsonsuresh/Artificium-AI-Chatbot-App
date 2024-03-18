@@ -2,10 +2,15 @@ import React from 'react'
 import { PiChatCircleLight } from 'react-icons/pi'
 import { ContentCreation, Creativeassets, DeveloperTools, IdeaGeneration } from '../data/data'
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { FaCode } from "react-icons/fa6";
+import { FaPenFancy } from "react-icons/fa6";
+import { FaLightbulb } from "react-icons/fa";
+
+
 const Artificium = () => {
     return (
         <>
-            <div className="flex w-full  justify-center items-center h-full  mt-2 p-2 overflow-y-scroll border scroll  scroll-smooth">
+            <div className="flex w-full  justify-center items-center h-full  mt-2 p-2 overflow-y-scroll  scroll  scroll-smooth">
                 <div className='text-center flex flex-col items-center h-full'>
                     <div>
                         <h3 className='font-bold text-xl'>Innovation Starter Pack</h3>
@@ -39,7 +44,7 @@ const Artificium = () => {
                         <div className='flex flex-col items-center'>
                             <div className='flex items-center flex-col my-4'>
                                 <div className='bg-gray-900 shadow-2xl shadow-blue-500 p-4 rounded-full'>
-                                    <PiChatCircleLight />
+                                    <FaCode />
                                 </div>
                                 <span className='font-bold' >Developer Tools</span>
                             </div>
@@ -62,7 +67,7 @@ const Artificium = () => {
                         <div className='flex flex-col items-center'>
                             <div className='flex items-center flex-col my-4'>
                                 <div className='bg-gray-900 shadow-2xl shadow-violet-500 p-4 rounded-full'>
-                                    <PiChatCircleLight />
+                                    <FaPenFancy />
                                 </div>
                                 <span className='font-bold' >Content Creation</span>
                             </div>
@@ -86,7 +91,7 @@ const Artificium = () => {
                         <div className='flex flex-col items-center'>
                             <div className='flex items-center flex-col my-4'>
                                 <div className='bg-[#0D0F10] shadow-2xl shadow-yellow-500 p-4 rounded-full'>
-                                    <PiChatCircleLight />
+                                    <FaLightbulb />
                                 </div>
                                 <span className='font-bold' >Idea Generation</span>
                             </div>
@@ -113,8 +118,8 @@ const Artificium = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-gray-950 w-[full] border h-[100px]'>
-
+            <div className='bg-gray-600 w-full  h-[100px] p-4 rounded-2xl'>
+                <input className='w-full  h-full bg-transparent' type="text" />
             </div>
         </>
     )
