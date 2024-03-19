@@ -13,7 +13,13 @@ export const GeminiContextProvider = (props) => {
     const [loading, setLoading] = useState(false)
     const [data, setData] = useState("")
 
-    console.log(input)
+    // console.log(input)
+
+    const delayPara = (index,nextword) =>{
+        setTimeout(()=>{
+            setData(prev=> prev + nextword)
+        }, 75*index)
+    }
 
 
     const onSent = async (prompt) => {
@@ -35,7 +41,13 @@ export const GeminiContextProvider = (props) => {
             }
         }
         let UpdatedNewRes = newRes.split("*").join("</br>")   
-        setData(UpdatedNewRes)
+        let TypRes = UpdatedNewRes.split(" ")
+        for(let i =0 ; i < TypRes.length; i++)
+        {
+            const nextword = TypRes[i]
+            delayPara(i,nextword+" ")
+        }
+        // setData(UpdatedNewRes)
         setLoading(false)
         setInput("")
 
