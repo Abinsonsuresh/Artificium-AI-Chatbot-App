@@ -17,7 +17,15 @@ export const GeminiContextProvider = (props) => {
 
 
     const onSent = async (prompt) => {
-        await runChat(input)
+        setData("")
+        setLoading(true)
+        setShowResult(true)
+        setRecentPrompt(input)
+        const res = await runChat(input)
+        setData(res)
+        setLoading(false)
+        setInput("")
+
     }
 
     // onSent("What is react")
