@@ -7,7 +7,7 @@ const Chat = () => {
   const { onSent, input, setInput, recentPrompt, setRecentPrompt, prevPrompts, setPrevPrompts, showResult, loading, data } = useGeminiContext()
   return (
     <>
-      <div className="flex w-full relative  justify-center items-center h-full md:min-h-[400px] min-h-[90vh]  mt-2 p-2 ">
+      <div className="flex w-full relative  justify-center items-center h-full   mt-2 p-2 ">
         <div className='overflow-y-scroll  scroll  scroll-smooth h-full  w-full'>
 
        
