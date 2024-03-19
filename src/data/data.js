@@ -17,7 +17,7 @@ export const DeveloperTools = [
 
 
 export const ContentCreation = [
-    {name:"Product description"},
+    {name:"Product"},
     {name:"E-mail copy"},
     {name:"Whitepaper"},
     {name:"Press release"},

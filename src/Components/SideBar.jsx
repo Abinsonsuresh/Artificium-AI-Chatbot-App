@@ -13,7 +13,7 @@ const SideBar = () => {
             <div className="">
 
 
-            <div className='w-[312px] bg-[#0f1112] p-2 rounded-xl  h-full  gap-1 hidden md:flex flex-col justify-between  overflow-y-scroll  overflow-x-hidden scroll  scroll-smooth'>
+            <div className='w-[312px] bg-[#0f1112] p-2 rounded-xl  h-full min-h-[750px]  gap-1 hidden md:flex flex-col justify-between  overflow-y-scroll  overflow-x-hidden scroll  scroll-smooth'>
                 <div className='flex flex-col gap-1'>
                     {/* GROUP SECTION */}
                     <div className='GROUP flex flex-row justify-between items-center p-[24px] rounded-t-xl bg-[#0D0F10] '>
