@@ -36,7 +36,7 @@ function App() {
       <div className="flex p-4 gap-5 max-h-screen  relative">
         <SideBar setShare={setShare} />
         <div className="flex flex-col">
-          <Header />
+          <Header  setSection={setSection}/>
           {sectionComponent}
         </div>
 

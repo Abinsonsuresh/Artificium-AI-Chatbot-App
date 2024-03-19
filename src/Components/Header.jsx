@@ -5,7 +5,7 @@ import { CiEdit } from "react-icons/ci";
 import { BsTriangle } from 'react-icons/bs';
 import { PiChatCircleLight } from "react-icons/pi";
 import { CiFolderOn } from "react-icons/ci";
-const Header = () => {
+const Header = ({setSection}) => {
     return (
         <>
             <div className='flex flex-col  gap-[1px]  rounded-xl'>
@@ -28,17 +28,17 @@ const Header = () => {
 
 
                 <div className='bg-[#0D0F10] flex justify-start items-center p-[24px] rounded-b-xl gap-5'>
-                    <div className='flex items-center gap-3'>
+                    <div className='flex items-center gap-3 cursor-pointer' onClick={()=>setSection("artificium")}>
                     <BsTriangle color='green' />
                         <span>Artificium</span>
                     </div>
 
-                    <div className='flex items-center gap-3'>
+                    <div className='flex items-center gap-3 cursor-pointer' onClick={()=>setSection("chat")}>
                     <PiChatCircleLight />
                         <span>Chat</span>
                     </div>
 
-                    <div className='flex items-center gap-3'>
+                    <div className='flex items-center gap-3 cursor-pointer' onClick={()=>setSection("library")}>
                     <CiFolderOn />
                         <span>Library</span>
                     </div>
