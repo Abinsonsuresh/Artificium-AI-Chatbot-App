@@ -22,7 +22,20 @@ export const GeminiContextProvider = (props) => {
         setShowResult(true)
         setRecentPrompt(input)
         const res = await runChat(input)
-        setData(res)
+        let ResArray = res.split("**");
+        let newRes;
+        for(let i =0 ; i < ResArray.length; i++)
+        {
+            if(i === 0 || i%2 !==1)
+            {
+                newRes += ResArray[i]
+            }
+            else{
+                newRes += "<b>"+ResArray[i]+"</b>"
+            }
+        }
+        let UpdatedNewRes = newRes.split("*").join("</br>")   
+        setData(UpdatedNewRes)
         setLoading(false)
         setInput("")
 
