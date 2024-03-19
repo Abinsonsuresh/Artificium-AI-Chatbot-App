@@ -33,7 +33,7 @@ function App() {
 
   return (
     <>
-      <div className="flex p-4  gap-5 max-h-screen  relative">
+      <div className="flex p-4  md:gap-5 max-h-screen  relative">
         <div className="flex-1">
         <SideBar  />
         </div>

@@ -7,7 +7,10 @@ const Chat = () => {
   const { onSent, input, setInput, recentPrompt, setRecentPrompt, prevPrompts, setPrevPrompts, showResult, loading, data } = useGeminiContext()
   return (
     <>
-      <div className="flex w-full  justify-center items-center h-full min-h-[400px]  mt-2 p-2 overflow-y-scroll  scroll  scroll-smooth">
+      <div className="flex w-full relative  justify-center items-center h-full md:min-h-[400px] min-h-[90vh]  mt-2 p-2 ">
+        <div className='overflow-y-scroll  scroll  scroll-smooth h-full  w-full'>
+
+       
         <div className='text-center w-full flex flex-col items-center h-full'>
 
           {/* CONTENT */}
@@ -56,10 +59,11 @@ const Chat = () => {
 
           </div>
         </div>
-      </div>
-      <div className='bg-[#0D0F10]  w-full relative mt-2 h-[100px] p-4 rounded-2xl'>
+        </div>
+      <div className='bg-[#0D0F10]  w-full absolute bottom-0 mt-2 h-[100px] p-4 rounded-2xl'>
         <PiArrowFatLinesRight onClick={() => onSent()} className='absolute top-[30%] right-10 cursor-pointer' size={30} />
         <input onChange={(e) => setInput(e.target.value)} value={input} className='w-full  h-full bg-transparent border-none outline-none' placeholder='Enter the prompt here' type="text" />
+      </div>
       </div>
     </>
   )

@@ -8,7 +8,7 @@ import { CiFolderOn } from "react-icons/ci";
 const Header = ({setSection, setShare, share}) => {
     return (
         <>
-            <div className='flex flex-col  gap-[1px]  rounded-xl'>
+            <div className='hidden md:flex flex-col  gap-[1px]  rounded-xl'>
                 <div className='bg-[#0D0F10] flex justify-between items-center p-[24px] rounded-t-xl'>
                     <div>
                         <p className='font-bold'>Orbital Oddysey</p>
