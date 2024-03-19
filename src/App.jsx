@@ -33,9 +33,11 @@ function App() {
 
   return (
     <>
-      <div className="flex p-4 gap-5 max-h-screen  relative">
+      <div className="flex p-4  gap-5 max-h-screen  relative">
+        <div className="flex-1">
         <SideBar  />
-        <div className="flex flex-col">
+        </div>
+        <div className="flex w-full flex-col">
           <Header  setSection={setSection} setShare={setShare} share={share}/>
           {sectionComponent}
         </div>
