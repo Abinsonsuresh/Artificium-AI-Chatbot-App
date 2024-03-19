@@ -5,7 +5,7 @@ import { CiEdit } from "react-icons/ci";
 import { BsTriangle } from 'react-icons/bs';
 import { PiChatCircleLight } from "react-icons/pi";
 import { CiFolderOn } from "react-icons/ci";
-const Header = ({setSection}) => {
+const Header = ({setSection, setShare, share}) => {
     return (
         <>
             <div className='flex flex-col  gap-[1px]  rounded-xl'>
@@ -16,7 +16,7 @@ const Header = ({setSection}) => {
 
                     </div>
                     <div className='flex items-center justify-center gap-5'>
-                        <div className='flex items-center gap-3 cursor-pointer'>
+                        <div className='flex items-center gap-3 cursor-pointer' onClick={()=>setShare(!share)}>
                             <IoShareSocialOutline color='gray' />
                             <button className='text-gray-500'>Share</button>
                         </div>
