@@ -46,6 +46,31 @@ const Header = ({setSection, setShare, share}) => {
                 </div>
 
             </div>
+
+            <div className='bg-[#0D0F10] flex justify-between items-center px-4 rounded-xl md:hidden'>
+            <div className='bg-[#0D0F10] flex justify-center items-center p-[24px] rounded-b-xl gap-5'>
+                    <div className='flex items-center gap-3 cursor-pointer' onClick={()=>setSection("artificium")}>
+                    <BsTriangle color='green' />
+                        <span>Artificium</span>
+                    </div>
+
+                    <div className='flex items-center gap-3 cursor-pointer' onClick={()=>setSection("chat")}>
+                    <PiChatCircleLight />
+                        <span>Chat</span>
+                    </div>
+
+                    <div className='flex items-center gap-3 cursor-pointer' onClick={()=>setSection("library")}>
+                    <CiFolderOn />
+                        <span>Library</span>
+                    </div>
+
+                </div>
+
+                <div>
+                <CiFolderOn />
+
+                </div>
+            </div>
         </>
     )
 }
