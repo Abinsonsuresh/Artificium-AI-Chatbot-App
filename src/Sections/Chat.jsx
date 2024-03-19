@@ -60,9 +60,11 @@ const Chat = () => {
           </div>
         </div>
         </div>
-      <div className='bg-[#0D0F10]  w-full absolute bottom-0 mt-2 h-[100px] p-4 rounded-2xl'>
+        <div className='w-full  absolute bottom-0 mt-2 h-[100px] p-4 '>
+          <div className='bg-[#0D0F10] w-full h-[70px] rounded-2xl p-4'>
         <PiArrowFatLinesRight onClick={() => onSent()} className='absolute top-[30%] right-10 cursor-pointer' size={30} />
         <input onChange={(e) => setInput(e.target.value)} value={input} className='w-full  h-full bg-transparent border-none outline-none' placeholder='Enter the prompt here' type="text" />
+          </div>
       </div>
       </div>
     </>

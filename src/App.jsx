@@ -7,48 +7,30 @@ import Chat from "./Sections/Chat"
 
 
 import Share from "./Components/Share"
+import { PiArrowFatLinesRight } from "react-icons/pi"
+import Page from "./Sections/Page"
 
 
 function App() {
-  const [share, setShare] = useState(false)
-  const [section, setSection] = useState("artificium")
-
-  let sectionComponent;
-
-  switch (section) {
-    case "artificium":
-      sectionComponent = <Artificium />;
-      break;
-      case "chat":
-      sectionComponent = <Chat />;
-      break;
-
-      case "library":
-      sectionComponent = <Library />;
-      break;
-    default:
-      sectionComponent = null;
-  }
 
 
   return (
     <>
-      <div className="flex p-4  md:gap-5 max-h-screen  relative">
+      <div className="flex  justify-between md:gap-5 h-screen max-h-screen overflow-hidden ">
         <div className="flex-1">
-        <SideBar  />
+          <SideBar />
         </div>
-        <div className="flex w-full flex-col">
-          <Header  setSection={setSection} setShare={setShare} share={share}/>
-          {sectionComponent}
+        <div className="w-full h-full flex flex-col">
+        <Page/>
         </div>
 
-        {
+        {/* {
           share && (
             <div className="absolute centered-axis-x">
               <Share />
             </div>
           )
-        }
+        } */}
 
 
       </div>
