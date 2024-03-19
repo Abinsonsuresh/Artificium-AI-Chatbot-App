@@ -13,7 +13,7 @@ const SideBar = () => {
             <div className="">
 
 
-            <div className='w-[312px] bg-[#0f1112] p-2 rounded-xl  h-full min-h-screen  gap-1 hidden md:flex flex-col justify-between  overflow-y-scroll  overflow-x-hidden scroll  scroll-smooth'>
+            <div className='w-[312px] bg-[#0f1112] p-2 rounded-xl  h-full   gap-1 hidden md:flex flex-col justify-between  overflow-y-scroll  overflow-x-hidden scroll  scroll-smooth'>
                 <div className='flex flex-col gap-1'>
                     {/* GROUP SECTION */}
                     <div className='GROUP flex flex-row justify-between items-center p-[24px] rounded-t-xl bg-[#0D0F10] '>
@@ -77,6 +77,8 @@ const SideBar = () => {
                                     <p className='text-[14px] '>Digital Product Launch</p>
                                 </div>
                             </div>
+
+                            
 
                             <div className='  rounded-xl'>
                                 <div className='flex justify-start items-center p-2 gap-5'>
