@@ -16,8 +16,8 @@ function App() {
 
   return (
     <>
-      <div className="flex  justify-between md:gap-5 h-screen md:max-h-screen max-h-[90vh] overflow-hidden p-6">
-        <div className="flex-1">
+      <div className="flex w-full justify-between md:gap-5 h-screen md:max-h-screen max-h-[90vh]  p-6">
+        <div className="">
           <SideBar />
         </div>
         <div className="w-full h-full flex flex-col">

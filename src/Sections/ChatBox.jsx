@@ -6,7 +6,7 @@ const ChatBox = () => {
   return (
     <>
     <Chat/>
-    {/* <Promptbox/> */}
+    <Promptbox/>
    
     </>
   )

@@ -31,6 +31,7 @@ const Page = () => {
             
                 <Header setSection={setSection} setShare={setShare} share={share} />
                 {sectionComponent}
+           
         
         </>
     )

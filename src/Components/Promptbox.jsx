@@ -6,12 +6,12 @@ const Promptbox = () => {
 
   return (
     <>
-       <div className="bg-gray-900 fixed bottom-0 w-full py-10 shadow-lg border">
-      <form className="px-2 mx-auto flex justify-start ">
-        <input onChange={(e)=> setInput(e.target.value)}  className="input w-full text-white focus:outline-none bg-transparent rounded-r-none" type="text" />
-        <button onClick={()=> onSent()} type="submit" className="w-auto bg-gray-700 text-white rounded-r-lg px-5 text-sm">Send</button>
-      </form>
-    </div>
+      <div className="bg-gray-900 fixed bottom-0 w-fit py-10 shadow-lg border ">
+        <form className="px-2 mx-auto flex justify-start ">
+          <input onChange={(e) => setInput(e.target.value)} className="input w-full text-white focus:outline-none bg-transparent rounded-r-none" type="text" />
+          <button onClick={() => onSent()} type="submit" className="w-auto bg-gray-700 text-white rounded-r-lg px-5 text-sm">Send</button>
+        </form>
+      </div>
     </>
   )
 }
