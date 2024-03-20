@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <div className="flex  justify-between md:gap-5 h-screen md:max-h-screen max-h-[90vh] overflow-hidden ">
+      <div className="flex  justify-between md:gap-5 h-screen md:max-h-screen max-h-[90vh] overflow-hidden p-6">
         <div className="flex-1">
           <SideBar />
         </div>

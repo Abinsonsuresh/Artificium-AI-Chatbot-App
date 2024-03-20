@@ -3,6 +3,7 @@ import Artificium from './Artificium';
 import Chat from './Chat';
 import Library from './Library';
 import Header from '../Components/Header';
+import ChatBox from './ChatBox';
 
 const Page = () => {
     const [share, setShare] = useState(false)
@@ -15,7 +16,7 @@ const Page = () => {
             sectionComponent = <Artificium />;
             break;
         case "chat":
-            sectionComponent = <Chat />;
+            sectionComponent = <ChatBox />;
             break;
 
         case "library":

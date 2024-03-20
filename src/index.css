@@ -40,3 +40,7 @@ flex-grow: 0;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.containerWrap {
+  @apply container mx-auto max-w-4xl
+}
