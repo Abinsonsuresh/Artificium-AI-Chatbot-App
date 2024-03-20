@@ -43,13 +43,13 @@ function App() {
           {sectionComponent}
         </div>
 
-        {/* {
+        {
           share && (
             <div className="absolute centered-axis-x">
               <Share />
             </div>
           )
-        } */}
+        }
 
 
       </div>

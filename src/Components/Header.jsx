@@ -32,7 +32,7 @@ const Header = ({setSection, setShare, share}) => {
                 <div className='bg-[#0D0F10] flex justify-start items-center p-[24px] rounded-b-xl gap-5'>
                     <div className='flex items-center gap-3 cursor-pointer' onClick={()=>setSection("artificium")}>
                     <BsTriangle color='green' />
-                        <span>Artificium</span>
+                        <span className=''>Artificium</span>
                     </div>
 
                     <div className='flex items-center gap-3 cursor-pointer' onClick={()=>setSection("chat")}>
