@@ -72,7 +72,7 @@ const Chat = () => {
 
       </div>
 
-      <div className="p-2">
+      <div className="p-2 mb-[10vh] md:mb-0">
         <div className="p-4 py-2  bg-[#0D0F10] rounded-xl shadow-lg  flex items-center  relative ">
           <div className='bg-[#1A1D21] p-4  rounded-xl cursor-pointer'>
             <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
