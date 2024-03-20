@@ -9,18 +9,39 @@ import { PiArrowFatLinesRight } from "react-icons/pi"
 import Page from "./Sections/Page"
 import { Routes, Route } from "react-router-dom"
 import Test from "./Sections/Test"
+import ChatBox from "./Sections/ChatBox"
 
 function App() {
+  const [share, setShare] = useState(false)
+  const [section, setSection] = useState("artificium")
+
+  let sectionComponent;
+
+  switch (section) {
+    case "artificium":
+      sectionComponent = <Artificium />;
+      break;
+    case "chat":
+      sectionComponent = <ChatBox />;
+      break;
+
+    case "library":
+      sectionComponent = <Library />;
+      break;
+    default:
+      sectionComponent = null;
+  }
 
 
   return (
     <>
       <div className="flex w-full justify-between md:gap-5 md:h-screen md:max-h-screen md:p-6">
         <div className="">
-          <SideBar />
+          <SideBar setSection={setSection} setShare={setShare} share={share} />
         </div>
         <div className="w-full h-full flex flex-col">
-        <Page/>
+          <Header setSection={setSection} setShare={setShare} share={share}  />
+          {sectionComponent}
         </div>
 
         {/* {
@@ -35,7 +56,7 @@ function App() {
       </div>
 
       <Routes>
-        <Route path="/test" element={<Test/>}></Route>
+        <Route path="/test" element={<Test />}></Route>
       </Routes>
     </>
   )

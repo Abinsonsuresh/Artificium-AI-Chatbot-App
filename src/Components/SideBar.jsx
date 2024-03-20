@@ -5,15 +5,20 @@ import { RiBillLine } from "react-icons/ri";
 import { FiSettings } from "react-icons/fi";
 import { BsTriangle } from "react-icons/bs";
 import { FaRegCircle } from "react-icons/fa";
+import { BsFillMenuButtonWideFill } from "react-icons/bs";
+import { PiChatCircleLight } from "react-icons/pi";
+import { CiFolderOn } from "react-icons/ci";
 
-
-const SideBar = () => {
+const SideBar = ({ setSection, setShare, share }) => {
+    const setNav = () =>{
+        
+    }
     return (
         <>
             <div className="">
 
 
-                <div className='w-[312px] bg-[#0f1112] p-2 rounded-xl  h-full   gap-1 hidden md:flex flex-col justify-between  overflow-y-scroll  overflow-x-hidden scroll  scroll-smooth'>
+                <div className='w-[312px] bg-[#0f1112] p-2 rounded-xl  h-full min-h-screen md:min-h-full gap-1 hidden md:flex flex-col justify-between  overflow-y-scroll  overflow-x-hidden scroll  scroll-smooth'>
                     <div className='flex flex-col gap-1'>
                         {/* GROUP SECTION */}
                         <div className='GROUP flex flex-row justify-between items-center p-[24px] rounded-t-xl bg-[#0D0F10] '>
@@ -140,7 +145,16 @@ const SideBar = () => {
             </div>
 
 
-         
+            <div className='md:hidden flex items-center flex-col bg-[#0D0F10] gap-5 w-12 h-full'>
+                <div className='flex items-center flex-col gap-5 mt-6'>
+                    <BsFillMenuButtonWideFill size={20} className='cursor-pointer' onClick={() => setNav()} />
+                    <BsTriangle size={20} color='green' onClick={() => setSection("artificium")} />
+                    <PiChatCircleLight size={20} onClick={() => setSection("chat")} />
+                    <CiFolderOn size={20} onClick={() => setSection("library")} />
+                </div>
+            </div>
+
+
         </>
     )
 }
