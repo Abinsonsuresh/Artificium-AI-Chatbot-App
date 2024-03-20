@@ -7,7 +7,6 @@ const ChatBox = () => {
     <>
     <div className='flex flex-col h-screen overflow-hidden'>
     <Chat/>
-    <Promptbox/>
     </div>
    
     </>
