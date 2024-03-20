@@ -54,9 +54,7 @@ function App() {
 
       </div>
 
-      <Routes>
-        <Route path="/test" element={<Test />}></Route>
-      </Routes>
+
     </>
   )
 }

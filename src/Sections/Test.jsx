@@ -2,16 +2,119 @@ import React from 'react'
 
 const Test = () => {
     return (
-        <div className="flex relative p-6">
-            <span className='absolute inset-y-0'>
-                <p>          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis autem repellendus fuga, unde nemo temporibus quibusdam animi optio, enim, ex aut ipsa recusandae doloremque maxime aliquam assumenda magnam et? Aliquam sapiente odit ducimus, error facilis quo nisi dicta, delectus consequatur, ea illum impedit accusamus porro labore deleniti. Placeat, voluptatibus doloribus laboriosam earum saepe, ad quia mollitia cum corporis optio ratione amet iste ipsum exercitationem nostrum beatae facilis sed tempora nesciunt perferendis fugiat, distinctio soluta. Ut itaque nemo officia laboriosam, in ipsam quas eaque corporis facere reiciendis sed, neque assumenda dicta odio labore optio ab explicabo facilis magni quos dolorem a porro? Totam perspiciatis asperiores atque, minus hic laborum rem ad iusto natus distinctio vitae illo eligendi voluptates impedit id, quidem aliquid sunt magni quis. Molestias earum in reiciendis quod? Autem vitae incidunt rerum saepe magni, quod sunt harum quasi deserunt cumque necessitatibus perferendis iure iusto fugit sequi voluptatem molestias, a dignissimos error ad aliquam. Culpa aspernatur adipisci hic. Minima blanditiis consectetur consequatur quos. Nam ratione dolorum vel corrupti aliquam, blanditiis dolorem saepe ut iusto impedit mollitia dolore, quibusdam, dolores voluptate ipsum eaque reprehenderit neque? Eaque autem error magni aut, placeat et quidem dolor? Doloremque tenetur sequi fugit iure et quae sit. Sapiente magnam fugit neque exercitationem veritatis provident voluptas molestias nam optio unde blanditiis et aut placeat inventore dolorum, nemo delectus? Porro esse ab nisi fugiat dolor unde, illum id in nobis saepe at ipsam sequi. Sequi porro sapiente unde possimus. Voluptatum rem voluptatem expedita vero itaque repellat nostrum sunt, aperiam voluptas iure tempore maxime iste quis dolores quos. Ducimus sequi distinctio quia error magnam illum ut dolorem earum porro architecto sunt modi reiciendis aut excepturi, itaque ullam dolores nesciunt expedita commodi. Laudantium vero minus natus dicta possimus, animi cumque suscipit doloremque totam ullam sequi perferendis consequuntur sunt facere quia odio deleniti amet aliquid, voluptatibus quam? Voluptate a magnam quibusdam velit deleniti at dolor ullam eaque, officiis aperiam eligendi aut hic molestias voluptatibus voluptatem saepe laboriosam ab accusamus tempora inventore eum commodi pariatur! Voluptas voluptate molestias culpa voluptatibus magni vitae minima dicta aliquam officiis cum accusantium magnam reprehenderit animi commodi iure dolorum nostrum aut deserunt autem cumque, aliquid fuga? Voluptatem natus ea quidem iusto exercitationem odio quia asperiores ab unde officiis possimus numquam consequatur qui neque quasi voluptatibus maxime molestias eveniet, distinctio obcaecati aspernatur iste assumenda, vero vitae? Neque vitae laudantium id fugiat maxime? Aperiam autem necessitatibus nesciunt, laborum explicabo est odit soluta cupiditate enim ducimus beatae maiores optio delectus quos magni, at quasi? Facilis veritatis, repudiandae explicabo aut amet nam quasi dolorum labore beatae fugit eaque quae commodi, unde officiis sapiente ipsam alias suscipit ullam aliquam minima molestiae ipsa. Iusto hic repellendus voluptatibus totam molestiae impedit vel saepe harum ducimus ipsa. Ut ab nihil voluptatum eius rem consequatur quae facilis, ratione ducimus optio necessitatibus repellat incidunt repellendus nulla amet, cum voluptatibus. Illo cupiditate unde quidem ex praesentium omnis sapiente. Aperiam cum explicabo eius nulla officiis nemo blanditiis eos consectetur, odio quod velit, quas quo at. Perspiciatis, vel facere? Non!</p>
-            </span>
+        <>
+            <div className="flex w-full  justify-center items-center h-full  mt-2 p-2 overflow-y-scroll  scroll  scroll-smooth">
+                <div className='text-center flex flex-col items-center h-full'>
+                    <div>
+                        <h3 className='font-bold text-xl'>Innovation Starter Pack</h3>
+                        <p className='text-sm text-gray-500'>Kickstart your innovation process with our comprehensive selection of predefined prompts.</p>
+                    </div>
+                    {/* CONTENT */}
+                    <div className="flex flex-wrap justify-center items-center gap-5 mt-2">
+                        <div className='flex flex-col items-center'>
+                            <div className='flex items-center flex-col my-4'>
+                                <div className='bg-gray-900 shadow-2xl shadow-green-500 p-4 rounded-full'>
+                                    <PiChatCircleLight color='green ' />
+                                </div>
+                                <span className='font-bold'>Creative Assets</span>
+                            </div>
+
+                            {
+                                Creativeassets.map((item, index) => {
+                                    return (
+                                        <div key={index} className='bg-[#0D0F10] to-black bg-gradient-to-r p-4 w-48 mt-2 rounded-2xl flex justify-between items-center'>
+                                            <div>
+                                                <p>{item.name}</p>
+                                            </div>
+                                            <IoIosArrowRoundForward size={21} color='gray' />
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
 
 
-            <div className="fixed bottom-0 flex justify-center items-center  w-full bg-blue-600 border p-6 inset-x-1">
-                <input type="text" placeholder='enjbndjkbnfj' className='w-full' />
+                        <div className='flex flex-col items-center'>
+                            <div className='flex items-center flex-col my-4'>
+                                <div className='bg-gray-900 shadow-2xl shadow-blue-500 p-4 rounded-full'>
+                                    <FaCode />
+                                </div>
+                                <span className='font-bold' >Developer Tools</span>
+                            </div>
+                            {
+                                DeveloperTools.map((item, index) => {
+                                    return (
+                                        <div key={index} className='bg-[#0D0F10] to-black bg-gradient-to-r p-4 w-48 mt-2 rounded-2xl flex justify-between items-center'>
+                                            <div>
+                                                <p>{item.name}</p>
+                                            </div>
+                                            <IoIosArrowRoundForward size={21} color='gray' />
+                                        </div>
+                                    )
+                                })
+                            }
+
+                        </div>
+
+
+                        <div className='flex flex-col items-center'>
+                            <div className='flex items-center flex-col my-4'>
+                                <div className='bg-gray-900 shadow-2xl shadow-violet-500 p-4 rounded-full'>
+                                    <FaPenFancy />
+                                </div>
+                                <span className='font-bold' >Content Creation</span>
+                            </div>
+
+                            {
+                                ContentCreation.map((item, index) => {
+                                    return (
+                                        <div key={index} className='bg-[#0D0F10] to-black bg-gradient-to-r p-4 w-48 mt-2 rounded-2xl flex justify-between items-center'>
+                                            <div>
+                                                <p>{item.name}</p>
+                                            </div>
+                                            <IoIosArrowRoundForward size={21} color='gray' />
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+
+
+
+                        <div className='flex flex-col items-center'>
+                            <div className='flex items-center flex-col my-4'>
+                                <div className='bg-[#0D0F10] shadow-2xl shadow-yellow-500 p-4 rounded-full'>
+                                    <FaLightbulb />
+                                </div>
+                                <span className='font-bold' >Idea Generation</span>
+                            </div>
+
+                            {
+                                IdeaGeneration.map((item, index) => {
+                                    return (
+                                        <div key={index} className='bg-[#0D0F10] p-4 w-48 mt-2 rounded-2xl flex justify-between items-center'>
+                                            <div>
+                                                <p>{item.name}</p>
+                                            </div>
+                                            <IoIosArrowRoundForward size={21} color='gray' />
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+
+                    <div className='flex flex-col items-center mt-8'>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus cumque, molestiae amet sequi totam in quaerat molestias repellat consectetur dolorem eius rerum, enim dolore accusamus. Accusamus autem doloremque nulla.</p>
+
+
+                    </div>
+                </div>
             </div>
-        </div>
+            <div className='bg-gray-600 w-full  h-[100px] p-4 rounded-2xl'>
+                <input className='w-full  h-full bg-transparent' type="text" />
+            </div>
+        </>
     )
 }
 

@@ -22,26 +22,28 @@ const Chat = () => {
               {/* CONTENT */}
               <div className='flex w-full  flex-col items-center mt-2 gap-5'>
 
-                <div className="user bg-[#0D0F10] flex  justify-start items-start w-full gap-3 p-4 border border-gray-600  border-opacity-50 rounded-xl shadow-2xl">
-                  <div className='flex items-center gap-3'>
-                    <div className='w-10 h-10 rounded-2xl bg-red-950'></div>
-                  </div>
-                  <div className='flex flex-col items-start w-full gap-3'>
-                    <div className='flex justify-between items-center w-full'>
-                      <p className='text-[16px]'>Ryan Lee</p>
-                      <IoCopyOutline />
-                    </div>
-                    <p className='text-[16px] text-gray-400 '>{recentPrompt}</p>
+           {
+            data && (     <div className="user bg-[#0D0F10] flex  justify-start items-start w-full gap-3 p-4 border border-gray-600  border-opacity-50 rounded-xl shadow-2xl">
+            <div className='flex items-center gap-3'>
+              <div className='w-10 h-10 rounded-2xl bg-red-950'></div>
+            </div>
+            <div className='flex flex-col items-start w-full gap-3'>
+              <div className='flex justify-between items-center w-full'>
+                <p className='text-[16px]'>Ryan Lee</p>
+                <IoCopyOutline />
+              </div>
+              <p className='text-[16px] text-gray-400 '>{recentPrompt}</p>
 
-                  </div>
-                </div>
+            </div>
+          </div>)
+           }
 
 
 
                 {
-                  !loading ? (<>
+                 !loading ? (<>
                     {
-                      <div className="user bg-[#0D0F10] flex  justify-start items-start w-full gap-3 p-4 border border-gray-600  border-opacity-50 rounded-xl shadow-2xl">
+                      data && <div className="user bg-[#0D0F10] flex  justify-start items-start w-full gap-3 p-4 border border-gray-600  border-opacity-50 rounded-xl shadow-2xl">
                         <div className='flex items-center gap-3'>
                           <div className='w-10 h-10 rounded-2xl bg-green-300'></div>
                         </div>
