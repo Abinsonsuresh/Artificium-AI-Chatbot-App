@@ -10,7 +10,7 @@ const Chat = () => {
   // onSent("what is react")
   return (
     <>
-      <div className="flex-1 my-4 overflow-hidden">
+      <div className="flex-1 overflow-hidden">
 
 
         <div className="flex  w-full relative  justify-center items-center h-full   mt-2 p-2 ">
@@ -70,7 +70,7 @@ const Chat = () => {
 
       </div>
 
-      <div className="p-2  ">
+      <div className="p-2">
         <div  className="p-4 bg-[#0D0F10] rounded-xl shadow-lg  flex relative ">
           <input onChange={(e) => setInput(e.target.value)} value={input} className="input flex-1 text-white focus:outline-none bg-transparent rounded-r-none" type="text" />
           <PiArrowFatLinesRight onClick={() => onSent()} className='absolute top-[30%] right-10 cursor-pointer' size={20} />

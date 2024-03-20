@@ -6,7 +6,6 @@ import Library from "./Sections/Library"
 import Chat from "./Sections/Chat"
 import Share from "./Components/Share"
 import { PiArrowFatLinesRight } from "react-icons/pi"
-import Page from "./Sections/Page"
 import { Routes, Route } from "react-router-dom"
 import Test from "./Sections/Test"
 import ChatBox from "./Sections/ChatBox"
@@ -39,7 +38,7 @@ function App() {
         <div className="">
           <SideBar setSection={setSection} setShare={setShare} share={share} />
         </div>
-        <div className="w-full h-full flex flex-col">
+        <div className="w-full h-full overflow-hidden flex flex-col">
           <Header setSection={setSection} setShare={setShare} share={share}  />
           {sectionComponent}
         </div>
