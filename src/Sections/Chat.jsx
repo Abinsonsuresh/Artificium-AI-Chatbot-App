@@ -38,7 +38,7 @@ const Chat = () => {
                     <div className='flex items-center gap-5 flex-col md:flex-row'>
                     <img className='w-96 rounded-2xl' src="https://wp.technologyreview.com/wp-content/uploads/2022/09/greg-rutkowski-dragon-cave-square.jpg" alt="" />
 
-                      <img className='min-w-96 min-h-96 rounded-2xl object-cover' src="https://img.freepik.com/free-photo/spooky-night-dark-mystery-fantasy-landscape-illuminated-lantern-autumn-colors-generated-by-artificial-intelligence_24640-131066.jpg" alt="" />
+                      <img className='md:min-w-96 md:min-h-96 w-96 rounded-2xl object-cover' src="https://img.freepik.com/free-photo/spooky-night-dark-mystery-fantasy-landscape-illuminated-lantern-autumn-colors-generated-by-artificial-intelligence_24640-131066.jpg" alt="" />
                     </div>
 
                     <p>Generate AI Images</p>
