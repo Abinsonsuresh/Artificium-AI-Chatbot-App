@@ -50,7 +50,7 @@ const Library = () => {
                                 <p>Main spacecraft used by the crew in the story. It is a highly advanced vessel designed to withstand the harsh conditions of space and capable of traveling vast distances at incredible speeds.</p>
                             </div>
                             <div className='my-4 w-full p-2 '>
-                                <img className=' object-cover object-center rounded-xl' src="https://img.freepik.com/free-photo/night-sky-glows-with-galaxy-mystical-silhouette-generative-ai_188544-11287.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1710892800&semt=ais" alt="" />
+                                <img className=' object-cover object-center rounded-xl' src="https://img.freepik.com/free-photo/spooky-night-dark-mystery-fantasy-landscape-illuminated-lantern-autumn-colors-generated-by-artificial-intelligence_24640-131066.jpg" alt="" />
                             </div>
 
                         </div>
