@@ -4,7 +4,7 @@ import { PiChatCircleLight } from "react-icons/pi";
 const Library = () => {
     return (
         <>
-            <div className="flex w-full flex-wrap  justify-center items-center h-full border gap-5  mt-2 p-2 overflow-y-scroll  scroll  scroll-smooth hide-scrollbar">
+            <div className="flex w-full flex-wrap  justify-center items-center  gap-5  mt-2 p-2 overflow-hidden">
 
                 <div className='ImagesSection border border-opacity-10 border-gray-600 w-full max-w-[300px] h-full rounded-2xl p-4 flex flex-col justify-between gap-5 overflow-y-scroll  scroll  scroll-smooth hide-scrollbar'>
 
