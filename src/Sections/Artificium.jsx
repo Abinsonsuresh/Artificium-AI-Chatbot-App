@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { PiArrowFatLinesRight, PiChatCircleLight } from 'react-icons/pi'
 import { ContentCreation, Creativeassets, DeveloperTools, IdeaGeneration } from '../data/data'
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -12,12 +12,42 @@ import LoadingGIF from '../assets/Loading.gif'
 
 const Artificium = () => {
     const api_key ="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"
+    // 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
     let active = false
     // let data = false
     const { onSent, input, setInput, recentPrompt, setRecentPrompt, prevPrompts, setPrevPrompts, showResult, loading, data } = useGeminiContext()
+// const [imgUrl, setimgUrl] =  useState()
+// const inpurRef = useRef(null)
 
-const inpurRef = useRef()
+// const ImageGenerator = async () =>{
+//     if(inpurRef.current.value === "")
+//     {
+//         return 0;
+//     }
+//     const response = await fetch(
+//         "https://api.openai.com/v1/images/generations",
+//         {
+//             method: "POST",
+//             headers:{
+//                 "content-type": "application/json",
+//                 Authorization: "Bearer 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",
+//                 "User-agent": "Chrome",
+//             },
+//             body:JSON.stringify({
+//                 prompt: `${inpurRef.current.value}`,
+//                 n:1,
+//                 size:"512x512"
+//             }),
+//         }
+//     )
 
+//     let data = await response.json()
+//     console.log(data)
+// }
+
+
+
+ 
     return (
         <>
             <div className='flex flex-col h-screen overflow-hidden'>
@@ -151,20 +181,21 @@ const inpurRef = useRef()
                                 {
                                     !loading ? (<>
                                         {
-                                             <div className="user bg-[#0D0F10] flex  justify-start items-start w-full gap-3 p-4 border border-gray-600  border-opacity-50 rounded-xl shadow-2xl">
+                                             <div className="user bg-[#0D0F10] my-2 flex  justify-start items-start w-full gap-3 p-4 border border-gray-600  border-opacity-50 rounded-xl shadow-2xl">
                                                 <div className='flex items-center gap-3'>
                                                     <div className='w-10 h-10 rounded-2xl bg-green-300'></div>
                                                 </div>
-                                                <div className='flex flex-col items-start w-full gap-3'>
+                                                
+                                                <div className='flex flex-col items-start w-full  gap-3'>
                                                     <div className='flex justify-between items-center w-full'>
                                                         <p className='text-[16px]'>Artificium</p>
                                                         <IoCopyOutline />
                                                     </div>
-                                                    {/* <p className='text-[16px] text-gray-400 text-start' dangerouslySetInnerHTML={{ __html: data }}></p> */}
-                                                    <div>
+                                                
+                                                    {/* <div>
                                                     <img className='w-96 rounded-2xl' src="https://wp.technologyreview.com/wp-content/uploads/2022/09/greg-rutkowski-dragon-cave-square.jpg" alt="" />
-                                                    </div>
-                                                    <p className='text-start'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, hic accusantium molestiae qui aspernatur vitae nesciunt dolorem corporis necessitatibus asperiores! Nemo explicabo dolorum iure dolor!</p>
+                                                    </div> */}
+                                                    <p className='text-[16px] text-gray-400 text-start' dangerouslySetInnerHTML={{ __html: data }}></p>
 
 
                                                 </div>
@@ -191,7 +222,7 @@ const inpurRef = useRef()
                         </svg>
 
                     </div>
-                    <input ref={inpurRef} placeholder='Enter your prompt here' value={input} className="input placeholder:text-sm p-4 flex-1 w-full  text-white focus:outline-none bg-transparent rounded-r-none" type="text" />
+                    <input onChange={(e) => setInput(e.target.value)} placeholder='Enter your prompt here' className="input placeholder:text-sm p-4 flex-1 w-full  text-white focus:outline-none bg-transparent rounded-r-none" type="text" />
 
                     <div className="flex items-center gap-4 flex-row">
 
