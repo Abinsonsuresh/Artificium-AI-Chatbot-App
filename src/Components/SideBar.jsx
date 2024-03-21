@@ -146,7 +146,7 @@ const SideBar = ({ setSection, setShare, share }) => {
 
                 </div>
 
-                <div className={!nav ?  `w-12 hidden h-12 bg-[#0f1112] rounded-r-lg flex items-center justify-center md:hidden` : `w-12 h-12 bg-[#0f1112] rounded-r-lg flex items-center justify-center md:hidden`}>
+                <div className={!nav ?  ` hidden ` : `w-12 h-12 bg-[#0f1112] rounded-r-lg flex items-center justify-center md:hidden`}>
                     <IoCloseOutline size={25} className='cursor-pointer'  onClick={() => setNavToggle()}/>
                 </div>
             </div>
