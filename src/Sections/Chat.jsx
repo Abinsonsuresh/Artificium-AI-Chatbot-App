@@ -14,7 +14,7 @@ const Chat = () => {
 
 
         <div className="flex  w-full relative  justify-center items-center h-full   mt-2 p-2 ">
-          <div className='overflow-y-scroll  scroll  scroll-smooth h-full  w-full'>
+          <div className='overflow-y-scroll  scroll  scroll-smooth h-full hide-scrollbar w-full'>
 
 
             <div className='text-center w-full flex flex-col items-center h-full'>
