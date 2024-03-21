@@ -24,14 +24,14 @@ const Header = ({ setSection, setShare, share }) => {
                                 <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://r2.starryai.com/results/1006004089/a341454b-39bf-4775-ae97-8207c4cb769f.webp" alt="" />
                                 <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://cdn.pixabay.com/photo/2023/09/20/03/30/character-8263792_1280.jpg" alt="" />
                                 <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5MuSlBrJXQ_jO5RU2_nGCHdk00eB7pFw09w&usqp=CAU" alt="" />
-                                <a className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-xl hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
+                                <a className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-[#1A1D21]  rounded-xl hover:bg-gray-950 dark:border-gray-800" href="#">+99</a>
                             </div>
                         </div>
                         <div className='flex items-center gap-3 cursor-pointer' onClick={() => setShare(!share)}>
                             <IoShareSocialOutline color='gray' />
                             <button className='text-gray-500'>Share</button>
                         </div>
-                        <div className='bg-gray-800 p-2 rounded-lg'>
+                        <div className='bg-[#1A1D21] p-2 rounded-lg'>
                             <CiEdit />
                         </div>
                     </div>
