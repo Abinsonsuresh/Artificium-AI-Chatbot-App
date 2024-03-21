@@ -218,7 +218,7 @@ const Artificium = () => {
                 <div className="p-4 py-2  bg-[#0D0F10] rounded-xl shadow-lg  flex items-center  relative ">
                     <div className='bg-[#1A1D21] p-4  rounded-xl cursor-pointer'>
                         <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 8V9C1 12.3137 3.68629 15 7 15M13 8V9C13 12.3137 10.3137 15 7 15M7 15V19M7 19H11M7 19H3M7 12C5.34315 12 4 10.6569 4 9V4C4 2.34315 5.34315 1 7 1C8.65685 1 10 2.34315 10 4V9C10 10.6569 8.65685 12 7 12Z" stroke="#686B6E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M1 8V9C1 12.3137 3.68629 15 7 15M13 8V9C13 12.3137 10.3137 15 7 15M7 15V19M7 19H11M7 19H3M7 12C5.34315 12 4 10.6569 4 9V4C4 2.34315 5.34315 1 7 1C8.65685 1 10 2.34315 10 4V9C10 10.6569 8.65685 12 7 12Z" stroke="#686B6E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
 
                     </div>
@@ -228,7 +228,7 @@ const Artificium = () => {
 
                         <div className=' cursor-pointer'>
                             <svg width="20" height="24" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.22183 11.7279L10.7019 6.24784C11.3853 5.56443 12.4934 5.56443 13.1768 6.24784V6.24784C13.8602 6.93126 13.8602 8.0393 13.1768 8.72272L7.6967 14.2028C6.32986 15.5696 4.11379 15.5696 2.74695 14.2028V14.2028V14.2028C1.38012 12.836 1.38012 10.6199 2.74695 9.25305L9.28769 2.71231C11.3379 0.662058 14.6621 0.662058 16.7123 2.71231V2.71231C18.7626 4.76256 18.7626 8.08668 16.7123 10.1369L10.1716 16.6777" stroke="#686B6E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M5.22183 11.7279L10.7019 6.24784C11.3853 5.56443 12.4934 5.56443 13.1768 6.24784V6.24784C13.8602 6.93126 13.8602 8.0393 13.1768 8.72272L7.6967 14.2028C6.32986 15.5696 4.11379 15.5696 2.74695 14.2028V14.2028V14.2028C1.38012 12.836 1.38012 10.6199 2.74695 9.25305L9.28769 2.71231C11.3379 0.662058 14.6621 0.662058 16.7123 2.71231V2.71231C18.7626 4.76256 18.7626 8.08668 16.7123 10.1369L10.1716 16.6777" stroke="#686B6E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
 
                         </div>
