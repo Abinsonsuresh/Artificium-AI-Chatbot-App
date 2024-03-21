@@ -13,9 +13,9 @@ import LoadingGIF from '../assets/Loading.gif'
 const Artificium = () => {
     const api_key ="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"
     // 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
-    let active = false
+    // let active = false
     // let data = false
-    const { onSent, input, setInput, recentPrompt, setRecentPrompt, prevPrompts, setPrevPrompts, showResult, loading, data } = useGeminiContext()
+    const { onSent, input, setInput, recentPrompt, setRecentPrompt, prevPrompts, setPrevPrompts, showResult, loading, data, active, setActive } = useGeminiContext()
 // const [imgUrl, setimgUrl] =  useState()
 // const inpurRef = useRef(null)
 
@@ -181,7 +181,7 @@ const Artificium = () => {
                                 {
                                     !loading ? (<>
                                         {
-                                             <div className="user bg-[#0D0F10] my-2 flex  justify-start items-start w-full gap-3 p-4 border border-gray-600  border-opacity-50 rounded-xl shadow-2xl">
+                                            data && <div className="user bg-[#0D0F10] my-2 flex  justify-start items-start w-full gap-3 p-4 border border-gray-600  border-opacity-50 rounded-xl shadow-2xl">
                                                 <div className='flex items-center gap-3'>
                                                     <div className='w-10 h-10 rounded-2xl bg-green-300'></div>
                                                 </div>

@@ -11,6 +11,8 @@ export const GeminiContextProvider = (props) => {
     const [prevPrompts, setPrevPrompts] = useState([])
     const [showResult, setShowResult] = useState(false)
     const [loading, setLoading] = useState(false)
+    const [active, setActive] = useState(true)
+
     const [data, setData] = useState("")
 
     // console.log(input)
@@ -49,13 +51,14 @@ export const GeminiContextProvider = (props) => {
         }
         // setData(res)
         setLoading(false)
+        setActive(false)
         setInput("")
 
     }
 // useEffect(()=>{
 //     onSent("What is react")
 // },[])
-    const contextValue = { onSent, input, setInput, recentPrompt, setRecentPrompt, prevPrompts, setPrevPrompts, showResult, loading, data }
+    const contextValue = { onSent, input, setInput, recentPrompt, setRecentPrompt, prevPrompts, setPrevPrompts, showResult, loading, data, active, setActive }
 
     return (
         <GeminiContext.Provider value={contextValue}>
