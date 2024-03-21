@@ -222,7 +222,7 @@ const Artificium = () => {
                         </svg>
 
                     </div>
-                    <input onChange={(e) => setInput(e.target.value)} placeholder='Enter your prompt here' className="input placeholder:text-sm p-4 flex-1 w-full  text-white focus:outline-none bg-transparent rounded-r-none" type="text" />
+                    <input onChange={(e) => setInput(e.target.value)} placeholder='Enter your prompt here' className="input placeholder:text-sm p-4 flex-1 w-full  text-white focus:outline-none bg-transparent rounded-r-none" value={input} type="text" />
 
                     <div className="flex items-center gap-4 flex-row">
 
