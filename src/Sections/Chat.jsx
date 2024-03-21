@@ -22,6 +22,29 @@ const Chat = () => {
               {/* CONTENT */}
               <div className='flex w-full  flex-col items-center mt-2 gap-5'>
 
+                <div className="user bg-[#0D0F10] my-2 flex  justify-start items-start w-full gap-3 p-4 border border-gray-600  border-opacity-50 rounded-xl shadow-2xl">
+                  <div className='flex items-center gap-3'>
+                    <div className=' '>
+                      <img className='w-10 h-10 rounded-xl' src="https://i.etsystatic.com/39582183/r/il/45396c/4881629201/il_570xN.4881629201_oksp.jpg" alt="" />
+                    </div>
+                  </div>
+
+                  <div className='flex flex-col items-start w-full  gap-3'>
+                    <div className='flex justify-between items-center w-full'>
+                      <p className='text-[16px]'>Artificium</p>
+                      <IoCopyOutline />
+                    </div>
+
+                    <div>
+                      <img className='w-96 rounded-2xl' src="https://wp.technologyreview.com/wp-content/uploads/2022/09/greg-rutkowski-dragon-cave-square.jpg" alt="" />
+                    </div>
+
+                    <p>Generate AI Images</p>
+
+                  </div>
+                </div>
+
+
                 {
                   data && (<div className="user bg-[#0D0F10] flex  justify-start items-start w-full gap-3 p-4 border  border-gray-600  border-opacity-50 rounded-xl shadow-2xl">
                     <div className='flex items-center gap-3'>
@@ -39,7 +62,6 @@ const Chat = () => {
                     </div>
                   </div>)
                 }
-
 
 
                 {
@@ -62,6 +84,8 @@ const Chat = () => {
                         </div>
                       </div>
                     }
+
+
 
                   </>) : (<div>
                     <img className='w-12 grayscale' src={LoadingGIF} alt="loading" />
