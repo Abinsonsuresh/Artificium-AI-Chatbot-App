@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaAngleDown, FaRegSquare } from "react-icons/fa6";
 import { MdOutlineSearch } from "react-icons/md";
 import { RiBillLine } from "react-icons/ri";
@@ -12,15 +12,16 @@ import { FaFolderClosed } from "react-icons/fa6";
 import { IoCloseOutline } from "react-icons/io5";
 
 const SideBar = ({ setSection, setShare, share }) => {
-    const setNav = () => {
-
+    const [nav, setNav] = useState(false)
+    const setNavToggle = () => {
+        setNav(!nav)
     }
     return (
         <>
             <div className="flex">
 
 
-                <div className='w-[312px] bg-[#0f1112] p-2 rounded-b-xl  h-full min-h-screen md:min-h-full gap-1 hidden md:flex flex-col justify-between  overflow-y-scroll  overflow-x-hidden scroll  scroll-smooth hide-scrollbar'>
+                <div className={!nav ? `w-[312px] bg-[#0f1112] p-2 rounded-b-xl  h-full min-h-screen md:min-h-full gap-1 hidden md:flex flex-col justify-between  overflow-y-scroll  overflow-x-hidden scroll  scroll-smooth hide-scrollbar` : `w-[312px] bg-[#0f1112] p-2 rounded-b-xl  h-full min-h-screen md:min-h-full gap-1 flex flex-col justify-between  overflow-y-scroll  overflow-x-hidden scroll  scroll-smooth hide-scrollbar`}>
                     <div className='flex flex-col gap-1'>
                         {/* GROUP SECTION */}
                         <div className='GROUP flex flex-row justify-between items-center p-[24px] rounded-t-xl bg-[#0D0F10] '>
@@ -145,15 +146,15 @@ const SideBar = ({ setSection, setShare, share }) => {
 
                 </div>
 
-                <div className='w-12 h-12 bg-[#0f1112] rounded-r-lg flex items-center justify-center md:hidden'>
-                    <IoCloseOutline size={25} />
+                <div className={!nav ?  `w-12 hidden h-12 bg-[#0f1112] rounded-r-lg flex items-center justify-center md:hidden` : `w-12 h-12 bg-[#0f1112] rounded-r-lg flex items-center justify-center md:hidden`}>
+                    <IoCloseOutline size={25} className='cursor-pointer'  onClick={() => setNavToggle()}/>
                 </div>
             </div>
 
 
             <div className='md:hidden flex items-center flex-col bg-[#0D0F10] gap-5 w-12 h-full'>
                 <div className='flex items-center flex-col gap-5 mt-6'>
-                    <BsFillMenuButtonWideFill size={20} className='cursor-pointer' onClick={() => setNav()} />
+                    <BsFillMenuButtonWideFill size={20} className='cursor-pointer' onClick={() => setNavToggle()} />
 
                     <div onClick={() => setSection("artificium")} className='cursor-pointer'>
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -168,8 +169,8 @@ const SideBar = ({ setSection, setShare, share }) => {
                         </svg>
 
                     </div>
-                    
-                    <FaFolderClosed size={20} onClick={() => setSection("library")} />
+
+                    <FaFolderClosed size={20} onClick={() => setSection("library") } />
 
                 </div>
             </div>
