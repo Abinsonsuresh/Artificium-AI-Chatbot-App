@@ -26,9 +26,9 @@ const SideBar = ({ setSection, setShare, share }) => {
                         {/* GROUP SECTION */}
                         <div className='GROUP flex flex-row justify-between items-center p-[24px] rounded-t-xl bg-[#0D0F10] '>
                             <div className='flex flex-row justify-center items-center gap-5'>
-                                <div>
-                                    <div className='w-10 h-10 rounded-full bg-red-950'></div>
-                                </div>
+                            <div className=' '>
+                                        <img className='w-10 h-10 rounded-xl' src="https://cdn.openart.ai/uploads/image_pgfSNb_J_1682134063623_512.webp" alt="" />
+                                    </div>
                                 <div className='flex flex-col'>
                                     <p className='text-[16px]'>Intellisys</p>
                                     <p className='text-[12px]'>12 members</p>
@@ -130,9 +130,9 @@ const SideBar = ({ setSection, setShare, share }) => {
                     <div className=''>
                         <div className='GROUP  flex flex-row justify-between items-center p-[24px] rounded-xl bg-gradient-to-r from-gray-900 via-black to-[#0D0F10] '>
                             <div className='flex flex-row justify-center items-center gap-5'>
-                                <div>
-                                    <div className='w-10 h-10 rounded-2xl bg-red-950'></div>
-                                </div>
+                            <div className=' '>
+                                        <img className='w-10 h-10 rounded-xl' src="https://r2.starryai.com/results/1006004089/a341454b-39bf-4775-ae97-8207c4cb769f.webp" alt="" />
+                                    </div>
                                 <div className='flex flex-col'>
                                     <p className='text-[16px]'>Ryan Lee</p>
                                     <p className='text-[12px]'></p>
@@ -284,7 +284,9 @@ const SideBar = ({ setSection, setShare, share }) => {
                         <div className='GROUP  flex flex-row justify-between items-center p-[24px] rounded-xl bg-gradient-to-r from-gray-900 via-black to-[#0D0F10] '>
                             <div className='flex flex-row justify-center items-center gap-5'>
                                 <div>
-                                    <div className='w-10 h-10 rounded-2xl bg-red-950'></div>
+                                    <div className=' '>
+                                        <img className='w-10 h-10 rounded-xl' src="https://r2.starryai.com/results/1006004089/a341454b-39bf-4775-ae97-8207c4cb769f.webp" alt="" />
+                                    </div>
                                 </div>
                                 <div className='flex flex-col'>
                                     <p className='text-[16px]'>Ryan Lee</p>

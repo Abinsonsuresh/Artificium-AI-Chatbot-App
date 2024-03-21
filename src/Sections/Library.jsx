@@ -26,13 +26,11 @@ const Library = () => {
                         </div>
 
                         <div className=' bg-[#0D0F10] p-8 my-2 w-full rounded-xl flex items-center justify-between'>
-                            <div>
-                                <div className="flex -space-x-4 rtl:space-x-reverse">
-                                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="" />
-                                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="" />
-                                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="" />
-                                    <a className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
-                                </div>
+                        <div className="flex -space-x-4 rtl:space-x-reverse">
+                                <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://r2.starryai.com/results/1006004089/a341454b-39bf-4775-ae97-8207c4cb769f.webp" alt="" />
+                                <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://cdn.pixabay.com/photo/2023/09/20/03/30/character-8263792_1280.jpg" alt="" />
+                                <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5MuSlBrJXQ_jO5RU2_nGCHdk00eB7pFw09w&usqp=CAU" alt="" />
+                                <a className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-xl hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
                             </div>
 
                             <div className='flex items-center gap-3'>
@@ -58,13 +56,11 @@ const Library = () => {
                         </div>
 
                         <div className=' bg-[#0D0F10] p-8 my-2 w-full rounded-xl flex items-center justify-between'>
-                            <div>
-                                <div className="flex -space-x-4 rtl:space-x-reverse">
-                                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="" />
-                                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="" />
-                                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="" />
-                                    <a className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
-                                </div>
+                        <div className="flex -space-x-4 rtl:space-x-reverse">
+                                <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://r2.starryai.com/results/1006004089/a341454b-39bf-4775-ae97-8207c4cb769f.webp" alt="" />
+                                <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://cdn.pixabay.com/photo/2023/09/20/03/30/character-8263792_1280.jpg" alt="" />
+                                <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5MuSlBrJXQ_jO5RU2_nGCHdk00eB7pFw09w&usqp=CAU" alt="" />
+                                <a className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-xl hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
                             </div>
 
                             <div className='flex items-center gap-3'>
@@ -97,13 +93,11 @@ const Library = () => {
                         </div>
 
                         <div className=' bg-[#0D0F10] p-8 my-2 w-full rounded-xl flex items-center justify-between'>
-                            <div>
-                                <div className="flex -space-x-4 rtl:space-x-reverse">
-                                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="" />
-                                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="" />
-                                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="" />
-                                    <a className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
-                                </div>
+                        <div className="flex -space-x-4 rtl:space-x-reverse">
+                                <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://r2.starryai.com/results/1006004089/a341454b-39bf-4775-ae97-8207c4cb769f.webp" alt="" />
+                                <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://cdn.pixabay.com/photo/2023/09/20/03/30/character-8263792_1280.jpg" alt="" />
+                                <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5MuSlBrJXQ_jO5RU2_nGCHdk00eB7pFw09w&usqp=CAU" alt="" />
+                                <a className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-xl hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
                             </div>
 
                             <div className='flex items-center gap-3'>
@@ -126,13 +120,11 @@ const Library = () => {
                         </div>
 
                         <div className=' bg-[#0D0F10] p-8 my-2 w-full rounded-xl flex items-center justify-between'>
-                            <div>
-                                <div className="flex -space-x-4 rtl:space-x-reverse">
-                                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="" />
-                                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="" />
-                                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="" />
-                                    <a className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
-                                </div>
+                        <div className="flex -space-x-4 rtl:space-x-reverse">
+                                <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://r2.starryai.com/results/1006004089/a341454b-39bf-4775-ae97-8207c4cb769f.webp" alt="" />
+                                <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://cdn.pixabay.com/photo/2023/09/20/03/30/character-8263792_1280.jpg" alt="" />
+                                <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5MuSlBrJXQ_jO5RU2_nGCHdk00eB7pFw09w&usqp=CAU" alt="" />
+                                <a className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-xl hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
                             </div>
 
                             <div className='flex items-center gap-3'>
@@ -165,13 +157,11 @@ const Library = () => {
                         </div>
 
                         <div className=' bg-[#0D0F10] p-8 my-2 w-full rounded-xl flex items-center justify-between'>
-                            <div>
-                                <div className="flex -space-x-4 rtl:space-x-reverse">
-                                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="" />
-                                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="" />
-                                    <img className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="" />
-                                    <a className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
-                                </div>
+                        <div className="flex -space-x-4 rtl:space-x-reverse">
+                                <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://r2.starryai.com/results/1006004089/a341454b-39bf-4775-ae97-8207c4cb769f.webp" alt="" />
+                                <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://cdn.pixabay.com/photo/2023/09/20/03/30/character-8263792_1280.jpg" alt="" />
+                                <img className="w-10 h-10 border-2 border-white rounded-xl dark:border-gray-800" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5MuSlBrJXQ_jO5RU2_nGCHdk00eB7pFw09w&usqp=CAU" alt="" />
+                                <a className="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-700 border-2 border-white rounded-xl hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
                             </div>
 
                             <div className='flex items-center gap-3'>
