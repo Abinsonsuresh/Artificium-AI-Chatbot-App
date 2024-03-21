@@ -46,8 +46,8 @@ const Library = () => {
 
                         <div className='bg-[#0D0F10] h-full flex flex-col items-center rounded-2xl justify-start'>
                             <div className='p-4 text-start font-semibold'>
-                                <p>Captain Drake</p>
-                                <p>Natural born leader with years of experience in space exploration.</p>
+                                <p>Cosmic Voyager</p>
+                                <p>Main spacecraft used by the crew in the story. It is a highly advanced vessel designed to withstand the harsh conditions of space and capable of traveling vast distances at incredible speeds.</p>
                             </div>
                             <div className='my-4 w-full p-2 '>
                                 <img className=' object-cover object-center rounded-xl' src="https://img.freepik.com/free-photo/night-sky-glows-with-galaxy-mystical-silhouette-generative-ai_188544-11287.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1710892800&semt=ais" alt="" />
@@ -64,7 +64,7 @@ const Library = () => {
                             </div>
 
                             <div className='flex items-center gap-3'>
-                                <p>12</p>
+                                <p>19</p>
                                 <PiChatCircleLight color='green' />
 
                             </div>
@@ -83,10 +83,10 @@ const Library = () => {
 
                     <div className='card flex flex-col items-center'>
 
-                        <div className='bg-[#0D0F10] h-full flex flex-col items-center rounded-2xl justify-start'>
+                        <div className='bg-[#0D0F10] h-full w-full flex flex-col items-center rounded-2xl justify-start'>
                             <div className='p-4 text-start font-semibold'>
-                                <p>Captain Drake</p>
-                                <p>Natural born leader with years of experience in space exploration.</p>
+                                <p>Character bios</p>
+                                <p> 3 documents, 43832 words</p>
                             </div>
                         
 
@@ -111,10 +111,10 @@ const Library = () => {
 
                     <div className='card flex flex-col items-center'>
 
-                        <div className='bg-[#0D0F10] h-full flex flex-col items-center rounded-2xl justify-start'>
-                            <div className='p-4 text-start font-semibold'>
-                                <p>Captain Drake</p>
-                                <p>Natural born leader with years of experience in space exploration.</p>
+                        <div className='bg-[#0D0F10] h-full w-full flex flex-col items-center rounded-2xl justify-start'>
+                            <div className='p-4 w-full text-start font-semibold'>
+                                <p>Plot outline</p>
+                                <p>1 document, 18745 words</p>
                             </div>
                         
                         </div>
@@ -128,7 +128,7 @@ const Library = () => {
                             </div>
 
                             <div className='flex items-center gap-3'>
-                                <p>12</p>
+                                <p>28</p>
                                 <PiChatCircleLight color='green' />
 
                             </div>
@@ -149,8 +149,8 @@ const Library = () => {
 
                         <div className='bg-[#0D0F10] h-full flex flex-col items-center rounded-2xl justify-start'>
                             <div className='p-4 text-start font-semibold'>
-                                <p>Captain Drake</p>
-                                <p>Natural born leader with years of experience in space exploration.</p>
+                                <p>Concept art for potential new characters or locations.</p>
+                                {/* <p>Natural born leader with years of experience in space exploration.</p> */}
                             </div>
                          
 
@@ -165,7 +165,7 @@ const Library = () => {
                             </div>
 
                             <div className='flex items-center gap-3'>
-                                <p>12</p>
+                                <p>1</p>
                                 <PiChatCircleLight color='green' />
 
                             </div>
@@ -177,8 +177,8 @@ const Library = () => {
 
                         <div className='bg-[#0D0F10] h-full flex flex-col items-center rounded-2xl justify-start'>
                             <div className='p-4 text-start font-semibold'>
-                                <p>Captain Drake</p>
-                                <p>Natural born leader with years of experience in space exploration.</p>
+                                <p>A list of potential plot points or story arcs.</p>
+                                {/* <p>Natural born leader with years of experience in space exploration.</p> */}
                             </div>
                           
 
