@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { PiArrowFatLinesRight, PiChatCircleLight } from 'react-icons/pi'
 import { ContentCreation, Creativeassets, DeveloperTools, IdeaGeneration } from '../data/data'
 import { IoIosArrowRoundForward } from "react-icons/io";
@@ -11,9 +11,12 @@ import LoadingGIF from '../assets/Loading.gif'
 
 
 const Artificium = () => {
-    let active = true
+    const api_key ="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"
+    let active = false
     // let data = false
     const { onSent, input, setInput, recentPrompt, setRecentPrompt, prevPrompts, setPrevPrompts, showResult, loading, data } = useGeminiContext()
+
+const inpurRef = useRef()
 
     return (
         <>
@@ -148,7 +151,7 @@ const Artificium = () => {
                                 {
                                     !loading ? (<>
                                         {
-                                            data && <div className="user bg-[#0D0F10] flex  justify-start items-start w-full gap-3 p-4 border border-gray-600  border-opacity-50 rounded-xl shadow-2xl">
+                                             <div className="user bg-[#0D0F10] flex  justify-start items-start w-full gap-3 p-4 border border-gray-600  border-opacity-50 rounded-xl shadow-2xl">
                                                 <div className='flex items-center gap-3'>
                                                     <div className='w-10 h-10 rounded-2xl bg-green-300'></div>
                                                 </div>
@@ -157,7 +160,11 @@ const Artificium = () => {
                                                         <p className='text-[16px]'>Artificium</p>
                                                         <IoCopyOutline />
                                                     </div>
-                                                    <p className='text-[16px] text-gray-400 text-start' dangerouslySetInnerHTML={{ __html: data }}></p>
+                                                    {/* <p className='text-[16px] text-gray-400 text-start' dangerouslySetInnerHTML={{ __html: data }}></p> */}
+                                                    <div>
+                                                    <img className='w-96 rounded-2xl' src="https://wp.technologyreview.com/wp-content/uploads/2022/09/greg-rutkowski-dragon-cave-square.jpg" alt="" />
+                                                    </div>
+                                                    <p className='text-start'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, hic accusantium molestiae qui aspernatur vitae nesciunt dolorem corporis necessitatibus asperiores! Nemo explicabo dolorum iure dolor!</p>
 
 
                                                 </div>
@@ -184,7 +191,7 @@ const Artificium = () => {
                         </svg>
 
                     </div>
-                    <input onChange={(e) => setInput(e.target.value)} placeholder='Enter your prompt here' value={input} className="input placeholder:text-sm p-4 flex-1 w-full  text-white focus:outline-none bg-transparent rounded-r-none" type="text" />
+                    <input ref={inpurRef} placeholder='Enter your prompt here' value={input} className="input placeholder:text-sm p-4 flex-1 w-full  text-white focus:outline-none bg-transparent rounded-r-none" type="text" />
 
                     <div className="flex items-center gap-4 flex-row">
 
